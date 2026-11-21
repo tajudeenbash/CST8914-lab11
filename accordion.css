@@ -40,13 +40,21 @@ button.accordion:hover,
 button.accordion.is-open {
   background-color: #ddd;
 }
-
 .accordion-content {
   background-color: white;
   border-left: 1px solid whitesmoke;
   border-right: 1px solid whitesmoke;
   padding: 0 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+}
+
+.accordion-content[hidden] {
+  display: none;
+}
+.container h2 {
+  margin: 0;
+
+}
+button.accordion:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: -3px;
 }
